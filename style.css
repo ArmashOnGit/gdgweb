@@ -1,6 +1,4 @@
-/* ===============================
-   Global Styles
-=============================== */
+/*Global Styles*/
 body {
   margin: 0;
   padding: 0;
@@ -84,9 +82,9 @@ h1 {
   color: #ffe066;
 }
 
-/* ===================== */
+
 /* HIGHLIGHT SECTION     */
-/* ===================== */
+
 .highlight-row {
   display: flex;
   justify-content: center;
@@ -117,8 +115,8 @@ h1 {
 }
 
   .highlight-box {
-    width: 90%;             /* responsive, centered */
-    max-width: 260px;       /* same max width as desktop */
+    width: 90%;            
+    max-width: 260px;       
     font-size: 1.7em;       /* slightly bigger than before */
     padding: 16px 20px;
   }
@@ -151,6 +149,7 @@ h1 {
     padding: 22px;
   }
 }
+
 
 
 
