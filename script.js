@@ -1,11 +1,7 @@
-// ===============================
-// 1. API KEY
-// ===============================
+// api key
 const API_KEY = "9eef7293d6ae1043c865fddc9c73c303";
 
-// ===============================
-// 2. Get all the elements from HTML
-// ===============================
+// functions
 const searchBtn = document.getElementById("searchBtn");
 const cityInput = document.getElementById("cityInput");
 const weatherInfo = document.getElementById("weatherInfo");
@@ -20,16 +16,16 @@ const wind = document.getElementById("wind");
 const minmax = document.getElementById("minmax");
 const pressure = document.getElementById("pressure");
 
-// ===============================
-// 3. Get selected units (°C / °F)
-// ===============================
+
+// get selected units (°C / °F)
+
 function getUnits() {
   return document.querySelector('input[name="units"]:checked').value;
 }
 
-// ===============================
-// 4. Fetch weather from API
-// ===============================
+
+// fetch weather from API
+
 async function fetchWeather(city) {
   errorBox.textContent = "";
   weatherInfo.style.display = "none";
@@ -51,9 +47,9 @@ async function fetchWeather(city) {
   }
 }
 
-// ===============================
-// 5. Show weather info
-// ===============================
+
+//show weather info
+
 function showWeather(data, units) {
   const unitSymbol = units === "metric" ? "°C" : "°F";
 
@@ -69,9 +65,9 @@ function showWeather(data, units) {
   weatherInfo.style.display = "block";
 }
 
-// ===============================
-// 6. Event listeners
-// ===============================
+
+//event listeners
+
 searchBtn.addEventListener("click", () => {
   const city = cityInput.value.trim();
   if (city) {
@@ -84,3 +80,4 @@ searchBtn.addEventListener("click", () => {
 cityInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") searchBtn.click();
 });
+
