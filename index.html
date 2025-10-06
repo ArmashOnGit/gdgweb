@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>☁️ Weather App</h1>
+
+    <!-- Search box -->
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Units -->
+    <div class="unit-toggle">
+      <label><input type="radio" name="units" value="metric" checked> °C</label>
+      <label><input type="radio" name="units" value="imperial"> °F</label>
+    </div>
+
+    <!-- Weather Results -->
+    <div class="weather-info" id="weatherInfo">
+      <h2 id="cityName"></h2>
+
+      <!-- HIGHLIGHTS: Temp & Humidity -->
+      <div class="highlight-row">
+        <div class="highlight-box">
+          <img src="images/temp.png" alt="Temperature icon" class="highlight-icon">
+          <span id="temp"></span>
+        </div>
+        <div class="highlight-box">
+          <img src="images/humidity.png" alt="Humidity icon" class="highlight-icon">
+          <span id="hum"></span>
+        </div>
+      </div>
+
+      <!-- Other details -->
+      <div class="info-box">🌥️ <span id="desc"></span></div>
+      <div class="info-box">🤔 <span id="feelsLike"></span></div>
+      <div class="info-box">💨 <span id="wind"></span></div>
+      <div class="info-box">📈 <span id="minmax"></span></div>
+      <div class="info-box">⚖️ <span id="pressure"></span></div>
+    </div>
+
+    <!-- Error Box -->
+    <div id="errorBox" class="error"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

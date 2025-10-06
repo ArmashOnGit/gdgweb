@@ -1,0 +1,132 @@
+/* Page background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: url("images/clouds.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+/* Main container */
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  margin: 80px auto;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+h1 {
+  margin-top: 0;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  color: #f0f8ff;
+}
+
+/* Search input + button */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 65%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00c6ff;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #0072ff;
+}
+
+/* Unit toggle */
+.unit-toggle {
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+.unit-toggle label {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Weather info */
+.weather-info {
+  margin-top: 20px;
+  display: none;
+}
+
+.weather-info h2 {
+  margin-bottom: 20px;
+  color: #ffe066;
+}
+
+/* ===================== */
+/* HIGHLIGHT SECTION     */
+/* ===================== */
+.highlight-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.highlight-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 15px;
+  flex: 1;
+  margin: 0 8px;
+  font-size: 1.6em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.highlight-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Info boxes (smaller details) */
+.info-box {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Error message */
+.error {
+  margin-top: 15px;
+  color: #ff6961;
+  font-weight: bold;
+}
