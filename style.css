@@ -1,4 +1,6 @@
-/* Page background */
+/* ===============================
+   Global Styles
+=============================== */
 body {
   margin: 0;
   padding: 0;
@@ -82,7 +84,9 @@ h1 {
   color: #ffe066;
 }
 
-/* Highlight Row - Desktop */
+/* ===================== */
+/* HIGHLIGHT SECTION     */
+/* ===================== */
 .highlight-row {
   display: flex;
   justify-content: center;
@@ -90,44 +94,31 @@ h1 {
   margin: 20px 0;
 }
 
-/* Highlight Box */
 .highlight-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 20px 25px;       /* bigger padding */
+  flex: 1;
+  margin: 0 8px;
+  font-size: 1.9em;         /* bigger font */
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid #00bcd4;
-  border-radius: 12px;
-  padding: 15px 20px;
-  min-width: 130px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+  gap: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
 
 .highlight-icon {
-  width: 32px;
-  height: 32px;
-  margin-right: 10px;
-}
-
-/* 📱 Mobile Fix */
-@media (max-width: 600px) {
-  .highlight-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .highlight-box {
-    width: 80%;   /* take more width so it looks centered */
-  }
+  width: 50px;              /* bigger icon */
+  height: 50px;
 }
 
 /* Info boxes (smaller details) */
 .info-box {
   background: rgba(255, 255, 255, 0.1);
   margin: 8px 0;
-  padding: 10px;
+  padding: 12px;
   border-radius: 10px;
   font-size: 1.1em;
   display: flex;
@@ -143,3 +134,17 @@ h1 {
   font-weight: bold;
 }
 
+/* 📱 Mobile fix */
+@media (max-width: 600px) {
+  .highlight-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .highlight-box {
+    width: 85%;   /* keep centered */
+    font-size: 2em;   /* even larger on mobile */
+    padding: 22px;
+  }
+}
