@@ -92,26 +92,44 @@ h1 {
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
+  flex-wrap: wrap; /* allows wrapping if needed on smaller screens */
 }
 
 .highlight-box {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 15px;
-  padding: 20px 25px;       /* bigger padding */
+  padding: 16px 20px;       /* slightly bigger padding */
   flex: 1;
-  margin: 0 8px;
-  font-size: 1.9em;         /* bigger font */
+  min-width: 120px;          /* ensure small width on narrow screens */
+  max-width: 260px;          /* don't exceed info-box width */
+  font-size: 1.65em;         /* slightly bigger font */
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
 .highlight-icon {
-  width: 50px;              /* bigger icon */
-  height: 50px;
+  width: 40px;              /* moderate icon size */
+  height: 40px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .highlight-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .highlight-box {
+    width: 90%;             /* responsive, centered */
+    max-width: 260px;       /* same max width as desktop */
+    font-size: 1.7em;       /* slightly bigger than before */
+    padding: 16px 20px;
+  }
 }
 
 /* Info boxes (smaller details) */
@@ -148,3 +166,4 @@ h1 {
     padding: 22px;
   }
 }
+
