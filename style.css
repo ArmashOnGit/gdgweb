@@ -116,14 +116,6 @@ h1 {
   height: 40px;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .highlight-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
   .highlight-box {
     width: 90%;             /* responsive, centered */
     max-width: 260px;       /* same max width as desktop */
@@ -159,5 +151,6 @@ h1 {
     padding: 22px;
   }
 }
+
 
 
